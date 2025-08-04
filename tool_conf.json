@@ -1,0 +1,65 @@
+[
+    {
+      "type": "function",
+      "function": {
+        "name": "email_tool",
+        "description": "Send an email to a recipient",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "from_mail": {
+              "type": "string",
+              "description": "The email address of the sender"
+            },
+            "to": {
+              "type": "string",
+              "description": "The email address of the recipient"
+            },
+            "header": {
+              "type": "string",
+              "description": "The header of the email"
+            },
+            "body": {
+              "type": "string",
+              "description": "The body of the email"
+            }
+          },
+          "required": ["from_mail", "to", "header", "body"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "search_tool",
+        "description": "Search the internet",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "The search query"
+            }
+          },
+          "required": ["query"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "crypto_tool",
+        "description": "Get current crypto prices",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "coin_id": {
+              "type": "string",
+              "description": "Cryptocurrency identifier"
+            }
+          },
+          "required": ["coin_id"]
+        }
+      }
+    }
+  ]
